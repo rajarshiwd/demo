@@ -1,0 +1,9 @@
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)" novalidate name="myform" autocomplete="on">
+
+                  <div class="form-group">
+                      <label for="comment">New Comment</label>
+                      <input id="comment" name="comment" class="form-control" type="text" #com= "ngModel" ngModel>
+                  </div>              
+                  <button  type="submit" class="btn btn-primary">Add New Comment</button>
+          
+              </form>
