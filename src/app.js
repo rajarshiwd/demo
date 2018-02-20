@@ -7,10 +7,8 @@ const app = express();
 app.use(cors());
 app.use(express.static(__dirname));
 
-app.use(bodyParser.json()); // support json encoded bodies
-// app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
+app.use(bodyParser.json()); 
 
-// some data for the API
 var comments = [
   { "id": 1, "comment": "Easy to pay" },
   { "id": 2, "comment": "More Secure to store" },
@@ -56,6 +54,6 @@ app.use(function(req, res, next) {
 
 // HTTP listener
 app.listen(3000, function () {
-    console.log('Example listening on port 3000!');
+    console.log(' listening on port 3000!');
 });
 module.exports = app;
